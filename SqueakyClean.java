@@ -4,6 +4,10 @@ public class SqueakyClean {
                 || c == 'τ'|| c == 'υ'|| c == 'φ'|| c == 'χ'|| c == 'ψ'|| c == 'ω';
     }
 
+    static boolean isNumber(int i ){
+        return i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 || i == 0;
+    }
+
     public static String clean(String identifier){
         StringBuilder stringBuilder = new StringBuilder();
         for(int i = 0; i < identifier.length(); i++){
