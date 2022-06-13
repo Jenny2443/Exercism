@@ -1,4 +1,4 @@
-package src;
+package src.Java;
 
 public class Proverb {
     String[] words;

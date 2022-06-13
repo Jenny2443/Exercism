@@ -1,4 +1,4 @@
-package src;
+package src.Java;
 
 public class SqueakyClean {
     static boolean isGreekChar(char c){

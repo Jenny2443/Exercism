@@ -1,3 +1,5 @@
+package src.Java;
+
 class BirdWatcher {
     private static int[] birdsPerDay;
 

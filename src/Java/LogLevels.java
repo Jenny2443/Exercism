@@ -1,3 +1,5 @@
+package src.Java;
+
 import java.util.Scanner;
 
 public class LogLevels {

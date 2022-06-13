@@ -1,4 +1,4 @@
-package src;
+package src.Java;
 
 class IsogramChecker {
     public static boolean isIsogram2(String p){

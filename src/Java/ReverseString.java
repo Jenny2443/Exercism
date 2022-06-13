@@ -1,3 +1,5 @@
+package src.Java;
+
 public class ReverseString {
     static String reverse(String inputString) {
         String s = "";

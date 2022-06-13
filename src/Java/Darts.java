@@ -1,3 +1,5 @@
+package src.Java;
+
 public class Darts {
     double x;
     double y;

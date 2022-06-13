@@ -1,4 +1,4 @@
-package src;
+package src.Java;
 
 public class Squeaky2 {
     static String clean(String identifier) {

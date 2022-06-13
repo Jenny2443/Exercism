@@ -1,3 +1,5 @@
+package src.Java;
+
 public class CarsAssemble {
 
     //Rates dadas por el enunciado
