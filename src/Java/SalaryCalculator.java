@@ -14,18 +14,14 @@ public class SalaryCalculator {
     * Implement the multiplierPerDaysSkipped method that returns the salary multiplier based on the number of days the employee skipped the job.
     * A 15% penalty is applied if more than five days were skipped.
     * */
-    //Aux calculo multiplos de 5
-    public static int cuantosMultiplos(int n){
-        int res = n / 5;
-        return res;
-    }
 
     public static double multiplierPerDaysSkipped(int daysSkipped) {
-        double percentage = 1; //Porcentaje inicial
+        final double MULTIPLIER_SKIPPED = 0.85;
+        final double MULTIPLIER = 1; //Porcentaje inicial
         if(daysSkipped < 5){ //Si no ha hecho 5 no se afecta
-            return percentage;
-        }else{ //Si +5, cuantos * 0,15 y resta
-            return percentage - (0.15 * cuantosMultiplos(daysSkipped));
+            return MULTIPLIER;
+        }else{ //Si +5, 0.85
+            return MULTIPLIER_SKIPPED;
         }
     }
 
@@ -66,9 +62,11 @@ public class SalaryCalculator {
     }
 
     public static void main(String[] args) {
+        //TEST
         System.out.println("Multiplier Per Day Skipped: " + multiplierPerDaysSkipped(10));
         System.out.println("Multiplier Per Product Sold: " + multiplierPerProductsSold(21));
         System.out.println("Bonus For Product Sold: " + bonusForProductSold(5));
         System.out.println("Final Salary: " + finalSalary(2,3));
+        System.out.println("Final Salary: " + finalSalary(10,2));
     }
 }
